@@ -1,0 +1,51 @@
+<%- include('include/_frontsiteheader') %>
+<section class="colors-hero">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="content-wrapper">
+                    <h2 class="search-title">Choose your color for your application</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="colors-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="text-center">
+                    <h3 class="section-title">Tools that help make your jobs more professional</h3>
+                    <p class="section-par">Free accessories that allow you to organize, create and save time on your designs</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-12">
+                <div class="colors-options-tab">
+                    <div class="site-tab">
+                        <a href="/colors" class="tablinks" onclick="siteCollection(event, 'solidColors')">
+                            <h4>Solid Colors</h4>
+                        </a>
+                        <a href="/multiple-colors" class="tablinks active" onclick="siteCollection(event, 'gradientColors')">
+                            <h4>Gradient Colors</h4>
+                        </a>
+                        
+                      </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="site-collections">
+                      
+                      <div id="gradientColors" class="tabcontent" style="display: block;">
+                        <div class="row mt-5">
+                            <%- include('include/_multiplecolors') %> 
+                        </div>
+                      </div>
+                      
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<%- include('include/_frontsitefooter') %>

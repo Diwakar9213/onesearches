@@ -1,0 +1,13 @@
+<% for(var i=0;i<brusheslist.length; i++) { %>
+    <tr>
+        <td> <%= i + 1  %>  </td>
+        <td><img src="<%= brusheslist[i].brushimage %>" class="mr-2" alt="image"></td>
+        <td><%= brusheslist[i].brushname %></td>
+        <td> <%= brusheslist[i].createdAt  %> </td>
+        <td>
+            <a href="<%= brusheslist[i].brushfile %>"><span class="action-btn btn-primary"><i class="fas fa-download"></i></span></a>
+            
+            <a class="delete" data-id=<%= brusheslist[i]._id %> > <span class="action-btn delete-btn"><i class="mdi mdi-trash-can"></i></span> </a>
+        </td>
+    </tr>
+   <% } %> 

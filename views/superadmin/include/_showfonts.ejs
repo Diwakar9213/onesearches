@@ -1,0 +1,13 @@
+<% for(var i=0;i<fontslist.length; i++) { %>
+    <tr>
+        <td> <%= i + 1  %>  </td>
+        <td><img src="<%= fontslist[i].fontimage %>" class="mr-2" alt="image"></td>
+        <td><%= fontslist[i].fontname %></td>
+        <td> <%= fontslist[i].createdAt  %> </td>
+        <td>
+            <a href="<%= fontslist[i].fontfilezip %>"><span class="action-btn btn-primary"><i class="fas fa-download"></i></span></a>
+            
+            <a class="delete" data-id=<%= fontslist[i]._id %> > <span class="action-btn delete-btn"><i class="mdi mdi-trash-can"></i></span> </a>
+        </td>
+    </tr>
+   <% } %> 

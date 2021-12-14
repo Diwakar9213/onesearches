@@ -1,0 +1,24 @@
+<% for(var i=0; i<multiplecolorslist.length; i++) { %> 
+<tr>
+    <td> <%= i + 1 %>  </td>
+   
+    <td class="multplecolors"> 
+        <div class="multple-colors-set">
+            <div class="colors-circle" style="background: <%= multiplecolorslist[i].colorscode1 %> ;"></div>
+        <div class="colors-circle" style="background: <%= multiplecolorslist[i].colorscode2 %> ;"></div>
+        <div class="colors-circle" style="background: <%= multiplecolorslist[i].colorscode3 %> ;"></div> 
+        <div class="colors-circle" style="background: <%= multiplecolorslist[i].colorscode4 %> ;"></div>
+        <div class="colors-circle" style="background: <%= multiplecolorslist[i].colorscode5 %> ;"></div>
+        <div class="colors-circle" style="background: <%= multiplecolorslist[i].colorscode6 %> ;"></div>
+        </div>
+    </td>
+        <td> <%= multiplecolorslist[i].colorscode1 %>,<%= multiplecolorslist[i].colorscode2 %>,<%= multiplecolorslist[i].colorscode3 %>,<%= multiplecolorslist[i].colorscode4 %>,<%= multiplecolorslist[i].colorscode5 %>,<%= multiplecolorslist[i].colorscode6 %> </td>
+   
+    <td> <%= multiplecolorslist[i].createdAt %> </td>
+    <td>
+        <a href="/update-multiple-colors?id=<%= multiplecolorslist[i]._id %>" class="action-btn edit-btn"><i class="mdi mdi-pencil"></i></a>
+        <a class="delete" data-id=<%= multiplecolorslist[i]._id %> > <span class="action-btn delete-btn"><i class="mdi mdi-trash-can"></i></span> </a>
+    </td>
+</tr>
+
+<% } %> 

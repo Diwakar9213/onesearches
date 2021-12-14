@@ -1,0 +1,47 @@
+<%- include('include/_frontsiteheader') %>
+<section class="hero-home webfonts-hero">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="content-wrapper">
+                    <h2 class="search-title">Search your favourite brushes here</h2>
+                    <form action="#">
+                       <div class="search-input">
+                           <span class="search-icons">
+                            <i class="fas fa-search"></i>
+                           </span>
+                        <input type="search" name="search-engine" placeholder="Search for anything" id="search-engine">
+                        <input type="submit" class="submit-engine-btn">
+                       </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="webfonts-bg">
+    <div class="container-fluid">
+        <div class="row">
+            <% for(var i=0;i<brusheslist.length; i++) { %>
+            <!-- Brush Item Begin -->
+            <div class="col-lg-4 col-12">
+                <a href="<%= brusheslist[i].brushfile %>" class="items-get-link">
+                    <div class="custom-cards">
+                        <div class="custom-img-cards">
+                            <img src="<%= brusheslist[i].brushimage %>" alt="<%= brusheslist[i].brushname %>" class="fonts-icons">
+                            <div class="items-name-icon">
+                                <p class="items-name"><%= brusheslist[i].brushname %></p>
+                                <a href="<%= brusheslist[i].brushfile %>" class="item-downloads-btn">
+                                    <i class="fas fa-download"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Brush Item End -->
+            <% } %> 
+        </div>
+    </div>
+</section>
+<%- include('include/_frontsitefooter') %> 

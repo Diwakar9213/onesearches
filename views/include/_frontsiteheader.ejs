@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to OneSearches</title>
+    <link rel="shortcut icon" href="../frontsite/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../frontsite/css/master.css">
+    <link rel="stylesheet" href="../frontsite/css/responsive.css">
+    <link rel="stylesheet" href="../frontsite/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+<body>
+
+    <!-- For Desktop -->
+<nav class="navbar navbar-expand-lg desktopNav">
+    <div class="container-fluid">
+      <a class="navbar-brand logo-area" href="/"> <img src="../frontsite/img/logo.svg" alt="logo" class="main-logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/fonts">Popular Fonts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/colors">Colors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/p-brushes">Photoshop Brushes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- For Mobile -->
+<nav class="navbar navbar-light fixed-top mobnav">
+    <div class="container-fluid">
+      <a class="navbar-brand logo-area" href="/">
+          <img src="../frontsite/img/logo.svg" alt="logo" class="main-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+            <img src="../frontsite/img/logo.svg" alt="logo" class="main-logo">
+          </h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/fonts">Popular Fonts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/colors">Colors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/p-brushes">Photoshop Brushes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>

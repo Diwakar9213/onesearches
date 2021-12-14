@@ -1,0 +1,15 @@
+<% for(var i=0; i<colorslist.length; i++) { %> 
+<tr>
+    <td> <%= i + 1 %>  </td>
+   
+    <td> <div class="colors-circle" style="background: <%= colorslist[i].colorscode %> ;"></div> </td>
+    <td> <%= colorslist[i].colorscode %> </td>
+   
+    <td> <%= colorslist[i].createdAt %> </td>
+    <td>
+        <a href="/update-colors?id=<%= colorslist[i]._id %> " class="action-btn edit-btn"><i class="mdi mdi-pencil"></i></a>
+        <a class="delete" data-id=<%= colorslist[i]._id %> > <span class="action-btn delete-btn"><i class="mdi mdi-trash-can"></i></span> </a>
+    </td>
+</tr>
+
+<% } %> 

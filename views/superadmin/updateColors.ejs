@@ -1,0 +1,39 @@
+<%- include('../include/_header')  %>
+
+<div class="main-panel">
+    <div class="content-wrapper space-less-page">
+        <div class="page-header">
+            <h3 class="page-title">
+                <span class="page-title-icon bg-gradient-primary text-white mr-2">
+                    <i class="fas fa-font"></i>
+                </span> Update Colors
+            </h3>
+        </div>
+
+        <div class="row">
+            <div class="col-12 grid-margin">
+              <div class="card">
+                <div class="card-body">
+                
+                  <form class="forms-sample" method="post" id="update_colors">
+
+                    <div class="form-group">
+                      <label for="colorcode">Color Code</label>
+                      
+                      <input type="hidden" name="id" value="<%= colorslist._id %>">
+                      <input type="text" class="form-control" name="colorscode" value="<%= colorslist.colorscode %> " placeholder="#00000">
+                    </div>
+
+
+                    <button class="btn btn-light" type="reset">Cancel</button>
+                    <button type="submit" class="btn btn-gradient-primary mr-2">Upload Color</button>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
+
+    </div>
+    
+<%- include('../include/_footer')  %>

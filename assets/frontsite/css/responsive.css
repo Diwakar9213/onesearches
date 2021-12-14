@@ -1,0 +1,29 @@
+@media (max-width: 767px) {
+  .desktopNav {
+    display: none !important;
+  }
+  .mobnav {
+    display: block !important;
+  }
+  .custom-cards {
+    max-height: initial;
+    overflow: hidden;
+  }
+  section {
+    padding: 15px;
+  }
+  .content-wrapper {
+    text-align: center;
+    padding: 100px 0px;
+  }
+  .search-input {
+    width: 100%;
+  }
+  .search-input {
+    margin: 30px auto 40px;
+  }
+  section.hero-home {
+    padding: 12vh 20px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

@@ -1,0 +1,58 @@
+<%- include('../include/_header')  %>
+
+<div class="main-panel">
+    <div class="content-wrapper space-less-page">
+        <div class="page-header">
+            <h3 class="page-title">
+                <span class="page-title-icon bg-gradient-primary text-white mr-2">
+                    <i class="fas fa-font"></i>
+                </span> Update Multiple Colors
+            </h3>
+        </div>
+
+        <div class="row">
+            <div class="col-12 grid-margin">
+              <div class="card">
+                <div class="card-body">
+                
+                  <form class="forms-sample" method="post" id="update_multipleColors">
+
+                    <div class="form-group">
+                      <label for="colorcode">Color Code 1</label>
+                      <input type="hidden" name="id" value="<%= multiplecolorslist._id %>">
+                      <input type="text" class="form-control" name="colorscode1" value="<%= multiplecolorslist.colorscode1 %>" placeholder="#00000">
+                    </div>
+                    <div class="form-group">
+                      <label for="colorcode">Color Code 2</label>
+                      <input type="text" class="form-control" name="colorscode2" value="<%= multiplecolorslist.colorscode2 %>" placeholder="#00000">
+                    </div>
+                    <div class="form-group">
+                      <label for="colorcode">Color Code 3</label>
+                      <input type="text" class="form-control" name="colorscode3" value="<%= multiplecolorslist.colorscode3 %>" placeholder="#00000">
+                    </div>
+                    <div class="form-group">
+                      <label for="colorcode">Color Code 4</label>
+                      <input type="text" class="form-control" name="colorscode4" value="<%= multiplecolorslist.colorscode4 %>" placeholder="#00000">
+                    </div>
+                    <div class="form-group">
+                      <label for="colorcode">Color Code 5</label>
+                      <input type="text" class="form-control" name="colorscode5" value="<%= multiplecolorslist.colorscode5 %>" placeholder="#00000">
+                    </div>
+                    <div class="form-group">
+                      <label for="colorcode">Color Code 6</label>
+                      <input type="text" class="form-control" name="colorscode6" value="<%= multiplecolorslist.colorscode6 %>" placeholder="#00000">
+                    </div>
+
+
+                    <button class="btn btn-light" type="reset">Cancel</button>
+                    <button type="submit" class="btn btn-gradient-primary mr-2">Upload Color</button>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
+
+    </div>
+    
+<%- include('../include/_footer')  %>

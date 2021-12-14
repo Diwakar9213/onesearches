@@ -1,0 +1,47 @@
+<%- include('include/_frontsiteheader') %>
+<section class="hero-home webfonts-hero">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="content-wrapper">
+                    <h2 class="search-title">Search your favourite fonts here</h2>
+                    <!-- <p class="search-subtitle">Download free web font-optimal for web, ios, android and windows application.</p> -->
+                    <form action="#">
+                       <div class="search-input">
+                           <span class="search-icons">
+                            <i class="fas fa-search"></i>
+                           </span>
+                        <input type="search" name="search-engine" placeholder="Search for anything" id="search-engine">
+                        <input type="submit" class="submit-engine-btn">
+                       </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="webfonts-bg">
+    <div class="container-fluid">
+        <div class="row">
+            <% for(var i=0; i<fontslist.length; i++) { %> 
+            <div class="col-lg-4 col-12">
+                <a href="../<%= fontslist[i].fontfilezip %>" class="items-get-link">
+                    <div class="custom-cards">
+                        <div class="custom-img-cards">
+                            <img src="../<%= fontslist[i].fontimage %>" alt="fonts-img" class="fonts-icons">
+                            <div class="items-name-icon">
+                                <p class="items-name"><%= fontslist[i].fontname %></p>
+                                <a href="../<%= fontslist[i].fontfilezip %>" class="item-downloads-btn">
+                                    <i class="fas fa-download"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <% } %> 
+
+        </div>
+    </div>
+</section>
+<%- include('include/_frontsitefooter') %> 

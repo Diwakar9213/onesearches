@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | One searche providing you everything</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="login_screen">
+        <div class="login-flex">
+            <div class="site-info">
+                <div class="login-content">
+                    <h1 class="greetings-title">Hello! <span class="ontime-greet" id="liveGreet"></span></h1>
+                <p></p>
+                </div>
+            </div>
+            <div class="site-login">
+                <form action="#" class="login-form" method="post">
+                    <p class="brand-logo"><img src="frontsite/img/logo.svg" alt="OneSearches" class="login-logo"></p>
+                    <h5 class="form-title">Login your account</h5>
+                    <div class="form-group form-field">
+                        <input type="email" placeholder="Email" name="email" id="email" class="form-control input-field">
+                        <i class="far fa-user field-icon"></i>
+                    </div>
+                    <div class="form-group form-field">
+                        <input type="password" placeholder="Password" name="password" id="password" class="form-control input-field">
+                        <i class="fas fa-key field-icon"></i>
+                        <i class="far fa-eye view-icon" id="togglePassword"></i>
+                    </div>
+                    <div class="login-btn">
+                        <input type="submit" name="login" id="login" value="Login">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
